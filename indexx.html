@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - KAVITHA NEKKALAPU</title>
+    <title>Portfolio - NEKKALAPU SIVA SATYA SAI LIKHITHA</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
     <style>
-        /* Existing CSS */
         * {
             box-sizing: border-box;
             margin: 0;
@@ -52,76 +51,155 @@
             position: relative;
             overflow: hidden;
         }
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
+        }
         h2 {
+            margin-bottom: 15px;
+            font-size: 1.8rem;
             color: #4a90e2;
+            position: relative;
+            padding-bottom: 5px;
+        }
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: #4a90e2;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 15px;
+            padding-left: 20px;
+            position: relative;
+        }
+        li::before {
+            content: "✔";
+            position: absolute;
+            left: 0;
+        }
+        a {
+            color: #4a90e2;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .footer {
+            text-align: center;
+            background: #4a90e2;
+            color: white;
+            padding: 15px 0;
+            margin-top: 40px;
+            border-radius: 10px;
+        }
+        .footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+        .callout {
+            background: #4a90e2;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            section {
+                padding: 15px;
+            }
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>KAVITHA NEKKALAPU</h1>
-    <p>Email: <a href="mailto:kavithachowdarynekkalapu@gmail.com">kavithachowdarynekkalapu@gmail.com</a> | Phone: +91-9110303825</p>
+    <h1>NEKKALAPU SIVA SATYA SAI LIKHITHA</h1>
+    <p>Email: <a href="mailto:sailikhithanekkalapu@gmail.com">sailikhithanekkalapu@gmail.com</a> | Phone: +91 9493537755</p>
 </header>
 
 <div class="container">
-    <section>
-        <h2>Objective</h2>
-        <p>To be part of an organization where I can contribute to innovative projects and enhance my skills and knowledge to drive the company's growth while advancing my career.</p>
-    </section>
-
-    <section>
-        <h2>Technical Skills</h2>
-        <ul>
-            <li><strong>Languages:</strong> Python, C++, Java, SQL</li>
-            <li><strong>Web Technologies:</strong> HTML, CSS, JavaScript</li>
-            <li><strong>Database:</strong> MySQL, PostgreSQL</li>
-            <li><strong>Tools:</strong> Jupyter Notebook, Tableau, Power BI, Excel</li>
-            <li><strong>ML Techniques:</strong> Predictive Modeling, Data Classification, Regression, Clustering</li>
-            <li><strong>Libraries:</strong> Pandas, NumPy, Scikit-Learn, Matplotlib, Seaborn, TensorFlow</li>
-            <li><strong>Soft Skills:</strong> Communication, Team Management, Problem Solving</li>
-        </ul>
-    </section>
-
+    <div class="callout">Welcome to My Portfolio!</div>
+    
     <section>
         <h2>Education</h2>
         <ul>
-            <li><strong>Aditya College of Engineering and Technology</strong><br>Bachelor of Technology in Electronics and Communication Engineering<br>CGPA: 7.89</li>
+            <li><strong>Shri Vishnu Engineering College for Women</strong><br>B.Tech in Information Technology | Oct 2022 - Present<br><strong>CGPA:</strong> 9.17</li>
+            <li><strong>Sri Chaitanya Junior College</strong><br>Intermediate (MPC) | Oct 2020 - May 2022<br><strong>Score:</strong> 956/1000</li>
+            <li><strong>Baba High School</strong><br>High School | Jun 2019 - May 2020<br><strong>Score:</strong> 593/600</li>
         </ul>
+    </section>
+
+    <section>
+        <h2>Skills Summary</h2>
+        <div class="skills-grid">
+            <ul>
+                <li><strong>Programming Languages:</strong> C, C++, Python, Java, SQL</li>
+            </ul>
+            <ul>
+                <li><strong>Web Technologies:</strong> HTML, CSS, JavaScript</li>
+            </ul>
+            <ul>
+                <li><strong>Databases:</strong> Oracle, MongoDB, MySQL</li>
+            </ul>
+            <ul>
+                <li><strong>Frameworks & Libraries:</strong> ReactJS, Node.js, Java Springboot</li>
+            </ul>
+            <ul>
+                <li><strong>Cloud Technologies:</strong> Microsoft Azure, AWS (Basic knowledge)</li>
+            </ul>
+        </div>
     </section>
 
     <section>
         <h2>Projects</h2>
         <ul>
-            <li><strong>Recognition of Audio Recording Source Device</strong><br>Developed a system using deep learning techniques (LSTM and RNN) to identify the source device of audio recordings.</li>
-            <li><strong>Breast Cancer Prediction</strong><br>Created a predictive model for early detection of breast cancer using Python and machine learning.</li>
-            <li><strong>Social Media Analytics</strong><br>Analyzed social influence on Twitter using the Influencers in Social Networks dataset with Python and XGBoost (81% accuracy).</li>
+            <li><strong>Path Visualizer</strong><br>Technologies Used: React, Dijkstra’s algorithm, A*, BFS<br>A web-based pathfinding visualizer that compares algorithms like Dijkstra, A*, and BFS. Users can interact with the grid to see how algorithms find the shortest path.</li>
+            <li><strong>Donation Site</strong><br>Technologies Used: React, Node.js, Express, Stripe, Cloud Firestore, TailwindCSS<br>Developed a secure donation platform in collaboration with a team. Improved the user experience based on feedback from testers.</li>
+            <li><strong>Calorie Burnt Prediction</strong><br>Technologies Used: Python, scikit-learn, pandas, numpy, joblib, matplotlib<br>Built a machine learning model to predict calories burned. Presented findings to stakeholders.</li>
         </ul>
     </section>
 
     <section>
-        <h2>Certifications and Achievements</h2>
+        <h2>Achievements and Certifications</h2>
         <ul>
-            <li>MTA: Introduction to Programming Using Python | Microsoft</li>
-            <li>Coursera: Introduction to Data Analytics</li>
-            <li>Organized Veda College Fest, coordinating technical and cultural events with over 500 attendees.</li>
+            <li>Gold Badge in Problem-Solving on HackerRank</li>
+            <li>Machine Learning - Skilldzire [<a href="#">Certificate Link</a>]</li>
+            <li>Introduction to Data Science - Infosys [<a href="#">Certificate Link</a>]</li>
         </ul>
     </section>
 
     <section>
-        <h2>Internships</h2>
+        <h2>Positions of Responsibility</h2>
         <ul>
-            <li><strong>Red Hat and Networking Internship | Technical Hub</strong><br>Managed Linux environments and learned networking basics, including IP addressing and subnetting.</li>
+            <li><strong>Innomatics Research Intern - Full Stack Developer</strong><br>Sept 2024 - Present<br>Gained hands-on experience in building and deploying web applications. Collaborated with cross-functional teams to develop robust and scalable applications.</li>
+            <li><strong>GSSOC Contributor</strong><br>2024 - Present<br>Contributed to open-source projects under the GirlScript Summer of Code, collaborating with teams to enhance code quality and add new features.</li>
+            <li><strong>She Codes Foundation Scholar</strong><br>2024 - Present<br>Developed a foundation in web development, collaborating with mentors and team members to complete web-based projects.</li>
         </ul>
     </section>
+</div>
 
-    <section>
-        <h2>Coding Profiles</h2>
-        <ul>
-            <li><a href="#">LeetCode</a></li>
-            <li><a href="#">CodeChef</a></li>
-        </ul>
-    </section>
+<div class="footer">
+    <p>Designed and Developed by NEKKALAPU SIVA SATYA SAI LIKHITHA</p>
 </div>
 
 </body>
